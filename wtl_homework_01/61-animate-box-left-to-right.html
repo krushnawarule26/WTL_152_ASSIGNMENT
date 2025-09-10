@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate Box Left to Right</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 200px;
+            background-color: #f0f0f0;
+            position: relative;
+            margin: 20px 0;
+            border: 2px solid #ccc;
+        }
+        
+        .moving-box {
+            width: 50px;
+            height: 50px;
+            background-color: #e74c3c;
+            position: absolute;
+            top: 75px;
+            left: 0;
+            animation: moveRight 3s infinite;
+        }
+        
+        @keyframes moveRight {
+            0% {
+                left: 0;
+                background-color: #e74c3c;
+            }
+            50% {
+                left: calc(100% - 50px);
+                background-color: #2ecc71;
+            }
+            100% {
+                left: 0;
+                background-color: #e74c3c;
+            }
+        }
+        
+        .slow-box {
+            animation-duration: 5s;
+            background-color: #f39c12;
+        }
+        
+        .fast-box {
+            animation-duration: 1s;
+            background-color: #9b59b6;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animate Box Left to Right</h1>
+    
+    <h2>Normal Speed</h2>
+    <div class="container">
+        <div class="moving-box"></div>
+    </div>
+    
+    <h2>Slow Speed</h2>
+    <div class="container">
+        <div class="moving-box slow-box"></div>
+    </div>
+    
+    <h2>Fast Speed</h2>
+    <div class="container">
+        <div class="moving-box fast-box"></div>
+    </div>
+    
+    <p>The boxes move from left to right and back continuously!</p>
+    <p>They also change color during the animation.</p>
+</body>
+</html> 

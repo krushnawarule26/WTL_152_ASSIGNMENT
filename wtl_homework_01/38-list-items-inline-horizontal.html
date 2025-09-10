@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Items Inline Horizontal</title>
+    <style>
+        .horizontal-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .horizontal-list li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        .normal-list {
+            list-style-type: disc;
+        }
+        
+        .example-container {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Horizontal List Items</h1>
+    
+    <div class="example-container">
+        <h2>Normal Vertical List</h2>
+        <ul class="normal-list">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+            <li>Fourth item</li>
+        </ul>
+    </div>
+    
+    <div class="example-container">
+        <h2>Horizontal List</h2>
+        <ul class="horizontal-list">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+            <li>Fourth item</li>
+        </ul>
+    </div>
+    
+    <p>The display: inline property makes list items appear side by side instead of stacked vertically.</p>
+    <p>We also removed the bullets and added margin-right for spacing between items.</p>
+    
+    <div class="example-container">
+        <h2>Another Horizontal List</h2>
+        <ul class="horizontal-list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    
+    <p>This is commonly used for navigation menus where you want links to appear in a row.</p>
+</body>
+</html> 

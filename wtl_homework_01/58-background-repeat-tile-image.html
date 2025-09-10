@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Repeat Tile Image</title>
+    <style>
+        body {
+            background-image: url('https://via.placeholder.com/50x50/FF6B6B/FFFFFF?text=*');
+            background-repeat: repeat;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        
+        .no-repeat {
+            background-image: url('https://via.placeholder.com/100x100/4ECDC4/FFFFFF?text=No');
+            background-repeat: no-repeat;
+            background-size: 100px 100px;
+            background-position: center;
+            height: 200px;
+            border: 2px solid #333;
+            margin: 20px 0;
+        }
+        
+        .repeat-x {
+            background-image: url('https://via.placeholder.com/80x40/FFE66D/000000?text=X');
+            background-repeat: repeat-x;
+            height: 100px;
+            border: 2px solid #333;
+            margin: 20px 0;
+        }
+        
+        .repeat-y {
+            background-image: url('https://via.placeholder.com/40x80/95E1D3/000000?text=Y');
+            background-repeat: repeat-y;
+            height: 200px;
+            border: 2px solid #333;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Background Repeat Examples</h1>
+        
+        <h2>Page Background</h2>
+        <p>The entire page has a tiled background pattern.</p>
+        
+        <h2>No Repeat</h2>
+        <div class="no-repeat"></div>
+        
+        <h2>Repeat X (Horizontal)</h2>
+        <div class="repeat-x"></div>
+        
+        <h2>Repeat Y (Vertical)</h2>
+        <div class="repeat-y"></div>
+        
+        <p>Different background-repeat values create different tiling effects!</p>
+    </div>
+</body>
+</html> 

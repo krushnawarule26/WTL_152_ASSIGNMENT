@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Single Column on Mobile</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px;
+        }
+        
+        .grid-item {
+            background-color: #3498db;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .item1 { background-color: #e74c3c; }
+        .item2 { background-color: #2ecc71; }
+        .item3 { background-color: #f39c12; }
+        .item4 { background-color: #9b59b6; }
+        .item5 { background-color: #1abc9c; }
+        .item6 { background-color: #34495e; }
+        
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Single Column on Mobile</h1>
+    
+    <div class="grid-container">
+        <div class="grid-item item1">
+            <h2>Item 1</h2>
+            <p>This will stack on mobile</p>
+        </div>
+        
+        <div class="grid-item item2">
+            <h2>Item 2</h2>
+            <p>This will stack on mobile</p>
+        </div>
+        
+        <div class="grid-item item3">
+            <h2>Item 3</h2>
+            <p>This will stack on mobile</p>
+        </div>
+        
+        <div class="grid-item item4">
+            <h2>Item 4</h2>
+            <p>This will stack on mobile</p>
+        </div>
+        
+        <div class="grid-item item5">
+            <h2>Item 5</h2>
+            <p>This will stack on mobile</p>
+        </div>
+        
+        <div class="grid-item item6">
+            <h2>Item 6</h2>
+            <p>This will stack on mobile</p>
+        </div>
+    </div>
+    
+    <p>Resize your browser to see the layout change!</p>
+</body>
+</html> 

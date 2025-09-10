@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Font Size</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        
+        h2 {
+            font-size: 24px;
+            color: #666;
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+            
+            p {
+                font-size: 16px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 18px;
+            }
+            
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Responsive Font Sizes</h1>
+        
+        <h2>This heading changes size on different screens</h2>
+        
+        <p>This paragraph text will also change size based on screen width. On desktop screens, the text is larger for better readability. On mobile devices, the text becomes smaller to fit better on smaller screens.</p>
+        
+        <p>Try resizing your browser window to see the font sizes change automatically!</p>
+        
+        <h2>Another Heading</h2>
+        
+        <p>All text elements will adjust their size based on the screen size. This makes the website more readable on all devices.</p>
+    </div>
+</body>
+</html> 

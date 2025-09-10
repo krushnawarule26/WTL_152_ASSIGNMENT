@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table Three Columns</title>
+    <style>
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+            flex-wrap: wrap;
+        }
+        
+        .pricing-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            transition: transform 0.3s ease;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .pricing-card.featured {
+            border: 2px solid #e74c3c;
+            transform: scale(1.05);
+        }
+        
+        .plan-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .price {
+            font-size: 36px;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+        
+        .price span {
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+        
+        .features li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .features li:last-child {
+            border-bottom: none;
+        }
+        
+        .cta-button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+        
+        .cta-button:hover {
+            background-color: #c0392b;
+        }
+        
+        .featured .cta-button {
+            background-color: #2ecc71;
+        }
+        
+        .featured .cta-button:hover {
+            background-color: #27ae60;
+        }
+        
+        @media (max-width: 768px) {
+            .pricing-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .pricing-card {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+            
+            .pricing-card.featured {
+                transform: none;
+            }
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            padding: 40px 20px 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pricing Table Three Columns</h1>
+    
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <div class="plan-name">Basic</div>
+            <div class="price">$9<span>/month</span></div>
+            <ul class="features">
+                <li>1 User</li>
+                <li>10 Projects</li>
+                <li>5GB Storage</li>
+                <li>Basic Support</li>
+            </ul>
+            <button class="cta-button">Choose Plan</button>
+        </div>
+        
+        <div class="pricing-card featured">
+            <div class="plan-name">Pro</div>
+            <div class="price">$19<span>/month</span></div>
+            <ul class="features">
+                <li>5 Users</li>
+                <li>50 Projects</li>
+                <li>25GB Storage</li>
+                <li>Priority Support</li>
+                <li>Advanced Features</li>
+            </ul>
+            <button class="cta-button">Choose Plan</button>
+        </div>
+        
+        <div class="pricing-card">
+            <div class="plan-name">Enterprise</div>
+            <div class="price">$49<span>/month</span></div>
+            <ul class="features">
+                <li>Unlimited Users</li>
+                <li>Unlimited Projects</li>
+                <li>100GB Storage</li>
+                <li>24/7 Support</li>
+                <li>Custom Features</li>
+                <li>API Access</li>
+            </ul>
+            <button class="cta-button">Choose Plan</button>
+        </div>
+    </div>
+</body>
+</html> 

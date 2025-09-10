@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Align Button to End</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 10px;
+            border: 2px solid #dee2e6;
+        }
+        
+        .content {
+            flex: 1;
+        }
+        
+        .end-button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        .end-button:hover {
+            background-color: #0056b3;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .example-box {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Align Button to End</h1>
+    
+    <div class="container">
+        <div class="content">
+            <h2>Content Area</h2>
+            <p>This is the main content area that takes up most of the space.</p>
+            <p>The button is aligned to the end (right side) of the container.</p>
+        </div>
+        
+        <button class="end-button">Action Button</button>
+    </div>
+    
+    <div class="example-box">
+        <h2>CSS Properties Used:</h2>
+        <ul>
+            <li><strong>display: flex:</strong> Makes the container a flexbox</li>
+            <li><strong>justify-content: space-between:</strong> Pushes content to left and button to right</li>
+            <li><strong>align-items: center:</strong> Vertically centers the content and button</li>
+            <li><strong>flex: 1:</strong> Makes the content area take up available space</li>
+        </ul>
+        
+        <h2>Alternative Methods:</h2>
+        <ul>
+            <li><strong>margin-left: auto:</strong> Push button to the right</li>
+            <li><strong>justify-content: flex-end:</strong> Align all items to the end</li>
+            <li><strong>justify-content: space-between:</strong> Space between content and button</li>
+        </ul>
+        
+        <h2>Common Use Cases:</h2>
+        <ul>
+            <li>Card layouts with action buttons</li>
+            <li>Form layouts with submit buttons</li>
+            <li>Header layouts with login/logout buttons</li>
+            <li>Product listings with "Add to Cart" buttons</li>
+        </ul>
+    </div>
+    
+    <p>This layout is commonly used in modern web design for cards, forms, and other UI components.</p>
+</body>
+</html> 

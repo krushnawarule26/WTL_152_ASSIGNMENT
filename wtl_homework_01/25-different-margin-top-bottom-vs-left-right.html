@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Margin Top/Bottom vs Left/Right</title>
+    <style>
+        .box-with-different-margins {
+            background-color: lightyellow;
+            border: 2px solid orange;
+            padding: 15px;
+            margin: 20px 50px;
+        }
+        
+        .normal-box {
+            background-color: lightgray;
+            border: 2px solid gray;
+            padding: 15px;
+            margin: 20px; /* Same margin on all sides */
+        }
+    </style>
+</head>
+<body>
+    <h1>Different Margin Values</h1>
+    
+    <div class="normal-box">
+        This box has equal margin (20px) on all sides.
+    </div>
+    
+    <div class="box-with-different-margins">
+        This box has 20px margin on top/bottom and 50px margin on left/right.
+        Notice how it has more horizontal space than vertical space.
+    </div>
+    
+    <div class="normal-box">
+        Another box with equal margins for comparison.
+    </div>
+    
+    <p>The syntax margin: 20px 50px means:</p>
+    <ul>
+        <li>20px margin on top and bottom</li>
+        <li>50px margin on left and right</li>
+    </ul>
+    <p>This creates a box that's more spread out horizontally than vertically.</p>
+</body>
+</html> 

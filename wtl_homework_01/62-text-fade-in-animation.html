@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Fade In Animation</title>
+    <style>
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+        }
+        
+        .fade-in-delay1 {
+            animation-delay: 0.5s;
+        }
+        
+        .fade-in-delay2 {
+            animation-delay: 1s;
+        }
+        
+        .fade-in-delay3 {
+            animation-delay: 1.5s;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .text-box {
+            background-color: #f8f9fa;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-box">
+        <h1 class="fade-in">Welcome to Our Website</h1>
+        <p class="fade-in fade-in-delay1">This text fades in with a slight delay.</p>
+        <p class="fade-in fade-in-delay2">Each paragraph appears one after another.</p>
+        <p class="fade-in fade-in-delay3">Creating a nice staggered effect!</p>
+    </div>
+    
+    <div class="text-box">
+        <h2 class="fade-in">Another Section</h2>
+        <p class="fade-in fade-in-delay1">The text starts invisible and fades in.</p>
+        <p class="fade-in fade-in-delay2">It also moves up slightly as it appears.</p>
+    </div>
+    
+    <p>Refresh the page to see the animation again!</p>
+</body>
+</html> 

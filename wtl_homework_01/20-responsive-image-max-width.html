@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image with Max-Width</title>
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .image-container {
+            width: 80%;
+            margin: 20px auto;
+            border: 2px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Image Example</h1>
+    
+    <div class="image-container">
+        <img src="https://via.placeholder.com/800x400/FF6B6B/FFFFFF?text=Responsive+Image" alt="Responsive Image">
+        <p>This image will scale down to fit the container width, but never exceed 100% of its container.</p>
+    </div>
+    
+    <p>Try resizing your browser window to see how the image responds to different screen sizes.</p>
+    <p>The max-width: 100% property ensures the image never gets wider than its container.</p>
+    <p>height: auto maintains the image's aspect ratio when it scales.</p>
+</body>
+</html> 

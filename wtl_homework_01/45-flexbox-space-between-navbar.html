@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Space Between Navbar</title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c3e50;
+            padding: 15px 30px;
+            list-style-type: none;
+            margin: 0;
+        }
+        
+        .navbar li {
+            margin: 0;
+        }
+        
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .navbar a:hover {
+            background-color: #34495e;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .content {
+            padding: 20px;
+        }
+        
+        .example-box {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="#" class="logo">MyWebsite</a></li>
+        <li class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </li>
+    </ul>
+    
+    <div class="content">
+        <h1>Flexbox Space Between Navbar</h1>
+        
+        <div class="example-box">
+            <h2>How it Works:</h2>
+            <p>The navbar uses <strong>justify-content: space-between</strong> to push the logo to the left and navigation links to the right.</p>
+            <p>This creates maximum space between the two main elements.</p>
+        </div>
+        
+        <h2>CSS Properties Used:</h2>
+        <ul>
+            <li><strong>display: flex:</strong> Makes the navbar a flexbox container</li>
+            <li><strong>justify-content: space-between:</strong> Distributes space between items</li>
+            <li><strong>align-items: center:</strong> Vertically centers the items</li>
+            <li><strong>gap: 20px:</strong> Adds space between navigation links</li>
+        </ul>
+        
+        <h2>Layout Structure:</h2>
+        <ul>
+            <li><strong>Logo:</strong> Positioned on the far left</li>
+            <li><strong>Navigation Links:</strong> Grouped together on the far right</li>
+            <li><strong>Space:</strong> Maximum space between logo and links</li>
+        </ul>
+        
+        <h2>Benefits:</h2>
+        <ul>
+            <li>Clean, professional layout</li>
+            <li>Responsive design</li>
+            <li>Easy to maintain</li>
+            <li>Common pattern for modern websites</li>
+        </ul>
+    </div>
+</body>
+</html> 

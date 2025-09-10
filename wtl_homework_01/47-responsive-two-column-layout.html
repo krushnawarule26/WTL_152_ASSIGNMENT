@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Two-Column Layout</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 30px;
+            margin: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .main-content {
+            flex: 2;
+            background-color: #e3f2fd;
+            padding: 30px;
+            border-radius: 10px;
+            border: 2px solid #2196f3;
+            min-width: 300px;
+        }
+        
+        .sidebar {
+            flex: 1;
+            background-color: #f3e5f5;
+            padding: 30px;
+            border-radius: 10px;
+            border: 2px solid #9c27b0;
+            min-width: 250px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .main-content, .sidebar {
+                flex: 1;
+                min-width: auto;
+            }
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .example-box {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Two-Column Layout</h1>
+    
+    <div class="container">
+        <div class="main-content">
+            <h2>Main Content</h2>
+            <p>This is the main content area that takes up more space on larger screens.</p>
+            <p>On desktop screens, this appears as a two-column layout with the main content on the left and sidebar on the right.</p>
+            <p>On mobile devices (screens smaller than 768px), this becomes a single column layout.</p>
+        </div>
+        
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <p>This is the sidebar content that appears on the right side on larger screens.</p>
+            <p>On mobile devices, it appears below the main content.</p>
+            <ul>
+                <li>Related links</li>
+                <li>Additional info</li>
+                <li>Navigation</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="example-box">
+        <h2>CSS Properties Used:</h2>
+        <ul>
+            <li><strong>display: flex:</strong> Creates the flexbox layout</li>
+            <li><strong>flex: 2 and flex: 1:</strong> Controls column widths (2:1 ratio)</li>
+            <li><strong>gap: 30px:</strong> Adds space between columns</li>
+            <li><strong>flex-wrap: wrap:</strong> Allows items to wrap to new lines</li>
+            <li><strong>@media query:</strong> Changes layout for small screens</li>
+        </ul>
+        
+        <h2>Responsive Behavior:</h2>
+        <ul>
+            <li><strong>Desktop (>768px):</strong> Two columns side by side</li>
+            <li><strong>Mobile (≤768px):</strong> Single column stacked</li>
+            <li><strong>Breakpoint:</strong> 768px (common tablet/mobile breakpoint)</li>
+        </ul>
+        
+        <h2>Key Features:</h2>
+        <ul>
+            <li>Automatic column sizing with flex properties</li>
+            <li>Smooth transition between layouts</li>
+            <li>Maintains readability on all screen sizes</li>
+            <li>No horizontal scrolling on mobile</li>
+        </ul>
+    </div>
+    
+    <p><strong>Try resizing your browser window to see the responsive behavior!</strong></p>
+    <p>When the window gets narrow, the layout will switch from two columns to a single column.</p>
+</body>
+</html> 

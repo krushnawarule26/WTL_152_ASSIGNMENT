@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation on Hover</title>
+    <style>
+        .bounce-box {
+            width: 100px;
+            height: 100px;
+            background-color: #e74c3c;
+            margin: 20px;
+            display: inline-block;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .bounce-box:hover {
+            animation: bounce 0.6s ease;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        .big-bounce {
+            width: 150px;
+            height: 150px;
+            background-color: #2ecc71;
+        }
+        
+        .small-bounce {
+            width: 80px;
+            height: 80px;
+            background-color: #f39c12;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bounce Animation on Hover</h1>
+        
+        <div class="bounce-box"></div>
+        <div class="bounce-box big-bounce"></div>
+        <div class="bounce-box small-bounce"></div>
+        
+        <p>Hover over the boxes to see them bounce!</p>
+        <p>Each box will bounce when you move your mouse over it.</p>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Bullets from Unordered List</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+        
+        .normal-list {
+            list-style-type: disc;
+        }
+        
+        .example-container {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Remove Bullets from Lists</h1>
+    
+    <div class="example-container">
+        <h2>List with Bullets (Normal)</h2>
+        <ul class="normal-list">
+            <li>First item with bullet</li>
+            <li>Second item with bullet</li>
+            <li>Third item with bullet</li>
+        </ul>
+    </div>
+    
+    <div class="example-container">
+        <h2>List without Bullets</h2>
+        <ul>
+            <li>First item without bullet</li>
+            <li>Second item without bullet</li>
+            <li>Third item without bullet</li>
+        </ul>
+    </div>
+    
+    <p>The list-style-type: none property removes the bullets from list items.</p>
+    <p>This is commonly used when you want to style list items as navigation menus or custom layouts.</p>
+    
+    <div class="example-container">
+        <h2>Another List without Bullets</h2>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Orange</li>
+            <li>Grape</li>
+        </ul>
+    </div>
+    
+    <p>Notice how all unordered lists without the "normal-list" class have no bullets.</p>
+</body>
+</html> 

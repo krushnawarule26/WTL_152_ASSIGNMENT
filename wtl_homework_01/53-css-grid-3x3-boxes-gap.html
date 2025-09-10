@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid 3x3 Boxes with Gap</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 100px);
+            gap: 15px;
+            margin: 20px;
+        }
+        
+        .grid-item {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .item1 { background-color: #e74c3c; }
+        .item2 { background-color: #2ecc71; }
+        .item3 { background-color: #f39c12; }
+        .item4 { background-color: #9b59b6; }
+        .item5 { background-color: #1abc9c; }
+        .item6 { background-color: #34495e; }
+        .item7 { background-color: #e67e22; }
+        .item8 { background-color: #95a5a6; }
+        .item9 { background-color: #16a085; }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Grid 3x3 Boxes with Gap</h1>
+    
+    <div class="grid-container">
+        <div class="grid-item item1">1</div>
+        <div class="grid-item item2">2</div>
+        <div class="grid-item item3">3</div>
+        <div class="grid-item item4">4</div>
+        <div class="grid-item item5">5</div>
+        <div class="grid-item item6">6</div>
+        <div class="grid-item item7">7</div>
+        <div class="grid-item item8">8</div>
+        <div class="grid-item item9">9</div>
+    </div>
+    
+    <p>Perfect 3x3 grid with gaps between boxes!</p>
+</body>
+</html> 

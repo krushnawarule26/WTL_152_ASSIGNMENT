@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Image with Border Radius</title>
+    <style>
+        .circular-image {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Circular Image Example</h1>
+    
+    <div class="image-container">
+        <img src="https://via.placeholder.com/200x200/4ECDC4/FFFFFF?text=Circle" alt="Circular Image" class="circular-image">
+        <p>This image has border-radius: 50% which makes it perfectly circular.</p>
+    </div>
+    
+    <p>The border-radius: 50% property creates a circular shape by rounding all corners to 50% of the element's size.</p>
+    <p>object-fit: cover ensures the image fills the circular area properly without distortion.</p>
+    <p>Try changing the border-radius value to see different levels of rounding!</p>
+</body>
+</html> 

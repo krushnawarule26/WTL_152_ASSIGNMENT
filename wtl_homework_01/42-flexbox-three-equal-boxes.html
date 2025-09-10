@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Three Equal Boxes</title>
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin: 20px;
+        }
+        
+        .flex-box {
+            flex: 1;
+            background-color: #3498db;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .box-1 {
+            background-color: #e74c3c;
+            flex: 1;
+        }
+        
+        .box-2 {
+            background-color: #2ecc71;
+            flex: 1;
+        }
+        
+        .box-3 {
+            background-color: #f39c12;
+            flex: 1;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .example-box {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Three Equal Boxes</h1>
+    
+    <div class="flex-container">
+        <div class="flex-box box-1">
+            <h2>Box 1</h2>
+            <p>This box takes up equal space as the others.</p>
+        </div>
+        
+        <div class="flex-box box-2">
+            <h2>Box 2</h2>
+            <p>All three boxes have the same width.</p>
+        </div>
+        
+        <div class="flex-box box-3">
+            <h2>Box 3</h2>
+            <p>They automatically adjust to fill the container.</p>
+        </div>
+    </div>
+    
+    <div class="example-box">
+        <h2>CSS Properties Used:</h2>
+        <ul>
+            <li><strong>display: flex:</strong> Makes the container a flexbox</li>
+            <li><strong>justify-content: space-between:</strong> Distributes space between items</li>
+            <li><strong>gap: 20px:</strong> Adds space between flex items</li>
+            <li><strong>flex: 1:</strong> Makes each box take equal space</li>
+        </ul>
+        
+        <h2>Key Benefits:</h2>
+        <ul>
+            <li>Boxes automatically adjust to equal widths</li>
+            <li>Responsive - they adapt to different screen sizes</li>
+            <li>Easy to add or remove boxes</li>
+            <li>No need to calculate percentages</li>
+        </ul>
+    </div>
+    
+    <p>Try resizing your browser window to see how the boxes maintain equal widths!</p>
+</body>
+</html> 

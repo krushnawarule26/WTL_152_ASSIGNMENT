@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Badge with Absolute</title>
+    <style>
+        .container {
+            position: relative;
+            background-color: lightblue;
+            padding: 30px;
+            margin: 20px;
+            border: 2px solid darkblue;
+            width: 300px;
+        }
+        
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .content {
+            margin-top: 10px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position Absolute Badge Example</h1>
+    
+    <div class="container">
+        <div class="badge">NEW</div>
+        <div class="content">
+            This box has a badge positioned in the top-right corner using position: absolute.
+            The badge is positioned relative to its nearest positioned ancestor (the container).
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="badge">SALE</div>
+        <div class="content">
+            Here's another box with a different badge. Notice how the badge always appears 
+            in the same position relative to the container, regardless of the content.
+        </div>
+    </div>
+    
+    <p>Key points about position: absolute:</p>
+    <ul>
+        <li>The element is removed from the normal document flow</li>
+        <li>It's positioned relative to its nearest positioned ancestor</li>
+        <li>Use top, right, bottom, left properties to position it</li>
+        <li>Commonly used for badges, notifications, and overlays</li>
+    </ul>
+</body>
+</html> 

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Column Boxes</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+            margin: 20px;
+        }
+        
+        .flex-box {
+            background-color: #9b59b6;
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .box-1 {
+            background-color: #e74c3c;
+        }
+        
+        .box-2 {
+            background-color: #2ecc71;
+        }
+        
+        .box-3 {
+            background-color: #f39c12;
+        }
+        
+        .box-4 {
+            background-color: #3498db;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .example-box {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Column Layout</h1>
+    
+    <div class="flex-container">
+        <div class="flex-box box-1">
+            <h2>Box 1</h2>
+            <p>This is the first box in the column.</p>
+        </div>
+        
+        <div class="flex-box box-2">
+            <h2>Box 2</h2>
+            <p>This is the second box in the column.</p>
+        </div>
+        
+        <div class="flex-box box-3">
+            <h2>Box 3</h2>
+            <p>This is the third box in the column.</p>
+        </div>
+        
+        <div class="flex-box box-4">
+            <h2>Box 4</h2>
+            <p>This is the fourth box in the column.</p>
+        </div>
+    </div>
+    
+    <div class="example-box">
+        <h2>CSS Properties Used:</h2>
+        <ul>
+            <li><strong>display: flex:</strong> Makes the container a flexbox</li>
+            <li><strong>flex-direction: column:</strong> Stacks items vertically</li>
+            <li><strong>gap: 15px:</strong> Adds space between flex items</li>
+            <li><strong>max-width: 400px:</strong> Limits the container width</li>
+        </ul>
+        
+        <h2>Key Benefits:</h2>
+        <ul>
+            <li>Boxes stack vertically in a clean column</li>
+            <li>Consistent spacing between items</li>
+            <li>Easy to add or remove boxes</li>
+            <li>Responsive design</li>
+        </ul>
+        
+        <h2>Flex Direction Options:</h2>
+        <ul>
+            <li><strong>row:</strong> Items in a row (default)</li>
+            <li><strong>column:</strong> Items in a column</li>
+            <li><strong>row-reverse:</strong> Items in reverse row order</li>
+            <li><strong>column-reverse:</strong> Items in reverse column order</li>
+        </ul>
+    </div>
+    
+    <p>The flex-direction: column property makes the flex items stack vertically instead of horizontally.</p>
+</body>
+</html> 

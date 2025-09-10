@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Flexbox Order on Mobile</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 20px;
+            margin: 20px;
+        }
+        
+        .box {
+            flex: 1;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            color: white;
+        }
+        
+        .box1 {
+            background-color: #e74c3c;
+        }
+        
+        .box2 {
+            background-color: #2ecc71;
+        }
+        
+        .box3 {
+            background-color: #f39c12;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column-reverse;
+            }
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reverse Flexbox Order on Mobile</h1>
+    
+    <div class="container">
+        <div class="box box1">
+            <h2>Box 1</h2>
+            <p>This is the first box</p>
+        </div>
+        
+        <div class="box box2">
+            <h2>Box 2</h2>
+            <p>This is the second box</p>
+        </div>
+        
+        <div class="box box3">
+            <h2>Box 3</h2>
+            <p>This is the third box</p>
+        </div>
+    </div>
+    
+    <p>Resize your browser to see the order change on mobile!</p>
+</body>
+</html> 

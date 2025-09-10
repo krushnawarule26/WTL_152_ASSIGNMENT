@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius Round Corners</title>
+    <style>
+        .slightly-rounded {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid darkblue;
+            border-radius: 10px;
+        }
+        
+        .very-rounded {
+            background-color: lightgreen;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid darkgreen;
+            border-radius: 25px;
+        }
+        
+        .completely-rounded {
+            background-color: lightcoral;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid darkred;
+            border-radius: 50px;
+        }
+        
+        .no-radius {
+            background-color: lightgray;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Border Radius Examples</h1>
+    
+    <div class="no-radius">
+        This box has no border-radius (sharp corners).
+    </div>
+    
+    <div class="slightly-rounded">
+        This box has border-radius: 10px (slightly rounded corners).
+    </div>
+    
+    <div class="very-rounded">
+        This box has border-radius: 25px (very rounded corners).
+    </div>
+    
+    <div class="completely-rounded">
+        This box has border-radius: 50px (completely rounded corners).
+    </div>
+    
+    <p>The border-radius property rounds the corners of an element.</p>
+    <p>Higher values create more rounded corners.</p>
+    <p>When border-radius equals half the element's width/height, it becomes a circle!</p>
+</body>
+</html> 

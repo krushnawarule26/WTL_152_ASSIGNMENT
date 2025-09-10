@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Icon Continuously</title>
+    <style>
+        .icon {
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            margin: 20px;
+            display: inline-block;
+            animation: rotate 2s linear infinite;
+        }
+        
+        .slow-rotate {
+            animation-duration: 4s;
+            background-color: #e74c3c;
+        }
+        
+        .fast-rotate {
+            animation-duration: 0.5s;
+            background-color: #2ecc71;
+        }
+        
+        .reverse-rotate {
+            animation-direction: reverse;
+            background-color: #f39c12;
+        }
+        
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rotate Icon Continuously</h1>
+        
+        <div class="icon"></div>
+        <div class="icon slow-rotate"></div>
+        <div class="icon fast-rotate"></div>
+        <div class="icon reverse-rotate"></div>
+        
+        <p>The icons rotate continuously at different speeds!</p>
+        <p>One rotates in reverse direction.</p>
+    </div>
+</body>
+</html> 

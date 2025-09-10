@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow on Image</title>
+    <style>
+        .shadow-image {
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image with Box Shadow</h1>
+    
+    <div class="image-container">
+        <img src="https://via.placeholder.com/300x200/FFA500/FFFFFF?text=Shadow+Image" alt="Image with Shadow" class="shadow-image">
+        <p>This image has a box shadow that makes it appear to float above the page.</p>
+    </div>
+    
+    <p>The box-shadow property creates a shadow effect around the image.</p>
+    <p>The values are: horizontal offset, vertical offset, blur radius, and color.</p>
+    <p>We also added border-radius to give the image rounded corners.</p>
+</body>
+</html> 

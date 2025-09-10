@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Border on Focus</title>
+    <style>
+        .focus-button {
+            background-color: #2196F3;
+            color: white;
+            padding: 15px 30px;
+            border: 2px solid #2196F3;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+        
+        .focus-button:focus {
+            border-color: #FF9800;
+            outline: none;
+        }
+        
+        .button-container {
+            text-align: center;
+            margin: 50px;
+        }
+        
+        .instructions {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Button Focus Effect</h1>
+    
+    <div class="instructions">
+        <p><strong>Instructions:</strong> Click on the button below, then press the Tab key to move focus to the button. Notice how the border changes color when the button is focused.</p>
+    </div>
+    
+    <div class="button-container">
+        <button class="focus-button">Click Me or Tab to Focus</button>
+    </div>
+    
+    <p>The :focus pseudo-class applies styles when the element receives focus (like when tabbing to it or clicking it).</p>
+    <p>This is important for accessibility - users navigating with keyboard need to see which element is focused.</p>
+    <p>We used outline: none to remove the default browser focus outline and replaced it with our custom border.</p>
+    
+    <div class="button-container">
+        <button class="focus-button">Another Focusable Button</button>
+    </div>
+    
+    <p>Try tabbing between the buttons to see the focus effect!</p>
+</body>
+</html> 

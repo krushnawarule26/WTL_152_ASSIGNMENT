@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Box with Quote Icon</title>
+    <style>
+        .testimonial {
+            background-color: #f8f9fa;
+            border-left: 4px solid #e74c3c;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 8px;
+            position: relative;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .quote-icon {
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background-color: #e74c3c;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            border-radius: 50%;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .author-info h4 {
+            margin: 0;
+            color: #333;
+        }
+        
+        .author-info p {
+            margin: 5px 0 0 0;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Testimonial Box with Quote Icon</h1>
+        
+        <div class="testimonial">
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">This product has completely transformed how I work. The features are amazing and the customer support is outstanding. I would highly recommend it to anyone looking for a solution like this.</p>
+            <div class="testimonial-author">
+                <div class="author-avatar">JS</div>
+                <div class="author-info">
+                    <h4>John Smith</h4>
+                    <p>CEO, Tech Company</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="testimonial">
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">I've been using this service for over a year now and I'm extremely satisfied. The quality is consistently high and the team is always responsive to my needs.</p>
+            <div class="testimonial-author">
+                <div class="author-avatar">MJ</div>
+                <div class="author-info">
+                    <h4>Mary Johnson</h4>
+                    <p>Marketing Director</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="testimonial">
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">Excellent service and great value for money. The testimonials speak for themselves - this is definitely the right choice for any business.</p>
+            <div class="testimonial-author">
+                <div class="author-avatar">DB</div>
+                <div class="author-info">
+                    <h4>David Brown</h4>
+                    <p>Small Business Owner</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

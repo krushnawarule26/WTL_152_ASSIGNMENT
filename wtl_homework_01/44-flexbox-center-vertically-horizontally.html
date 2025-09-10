@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Center Vertically and Horizontally</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        
+        .centered-box {
+            background-color: #3498db;
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .example-box {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="centered-box">
+            <h1>Centered Box</h1>
+            <p>This box is perfectly centered both vertically and horizontally using Flexbox!</p>
+            <p>It's in the middle of the screen regardless of screen size.</p>
+        </div>
+    </div>
+    
+    <div class="example-box">
+        <h2>CSS Properties Used:</h2>
+        <ul>
+            <li><strong>display: flex:</strong> Makes the container a flexbox</li>
+            <li><strong>justify-content: center:</strong> Centers horizontally</li>
+            <li><strong>align-items: center:</strong> Centers vertically</li>
+            <li><strong>min-height: 100vh:</strong> Makes container full viewport height</li>
+        </ul>
+        
+        <h2>Centering Explanation:</h2>
+        <ul>
+            <li><strong>justify-content:</strong> Controls alignment along the main axis (horizontal in this case)</li>
+            <li><strong>align-items:</strong> Controls alignment along the cross axis (vertical in this case)</li>
+            <li><strong>100vh:</strong> Viewport height - makes the container as tall as the screen</li>
+        </ul>
+        
+        <h2>Alternative Centering Methods:</h2>
+        <ul>
+            <li><strong>Grid:</strong> display: grid; place-items: center;</li>
+            <li><strong>Position:</strong> position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);</li>
+            <li><strong>Flexbox:</strong> display: flex; justify-content: center; align-items: center;</li>
+        </ul>
+    </div>
+    
+    <p>Flexbox makes centering elements much easier than older CSS methods!</p>
+</body>
+</html> 

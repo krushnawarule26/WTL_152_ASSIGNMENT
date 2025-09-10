@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Transition Button Hover</title>
+    <style>
+        .button {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+        
+        .button:hover {
+            background-color: #2980b9;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .button:active {
+            transform: translateY(-1px);
+        }
+        
+        .slow-button {
+            transition: all 1s ease;
+        }
+        
+        .fast-button {
+            transition: all 0.1s ease;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Smooth Transition Button Hover</h1>
+    
+    <button class="button">Normal Transition</button>
+    <button class="button slow-button">Slow Transition</button>
+    <button class="button fast-button">Fast Transition</button>
+    
+    <p>Hover over the buttons to see the smooth transitions!</p>
+    <p>Different transition speeds create different effects.</p>
+</body>
+</html> 

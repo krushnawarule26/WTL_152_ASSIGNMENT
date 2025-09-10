@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative Offset</title>
+    <style>
+        .offset-box {
+            position: relative;
+            top: 20px;
+            left: 30px;
+            background-color: lightgreen;
+            padding: 20px;
+            border: 2px solid darkgreen;
+            width: 250px;
+        }
+        
+        .normal-box {
+            background-color: lightcoral;
+            padding: 20px;
+            border: 2px solid darkred;
+            width: 250px;
+            position: static;
+        }
+        
+        .container {
+            margin: 40px;
+            border: 1px dashed #ccc;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position Relative Offset Example</h1>
+    
+    <div class="container">
+        <div class="normal-box">
+            This is a normal box with no positioning offset.
+        </div>
+        
+        <div class="offset-box">
+            This box has position: relative with top: 20px and left: 30px offset.
+            Notice how it's moved down and to the right from its normal position.
+        </div>
+        
+        <div class="normal-box">
+            This normal box shows where the offset box would normally be positioned.
+        </div>
+    </div>
+    
+    <p>Key points about position: relative:</p>
+    <ul>
+        <li>The element stays in the normal document flow</li>
+        <li>It's offset from its normal position</li>
+        <li>Other elements don't move to fill the space</li>
+        <li>Useful for fine-tuning element positions</li>
+    </ul>
+    
+    <p>The offset box is moved 20px down (top: 20px) and 30px right (left: 30px) from where it would normally appear.</p>
+</body>
+</html> 

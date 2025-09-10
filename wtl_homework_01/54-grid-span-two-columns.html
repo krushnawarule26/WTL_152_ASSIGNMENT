@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Span Two Columns</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 20px;
+        }
+        
+        .grid-item {
+            background-color: #3498db;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .span-two {
+            grid-column: span 2;
+            background-color: #e74c3c;
+        }
+        
+        .item1 { background-color: #2ecc71; }
+        .item2 { background-color: #f39c12; }
+        .item3 { background-color: #9b59b6; }
+        .item4 { background-color: #1abc9c; }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Span Two Columns</h1>
+    
+    <div class="grid-container">
+        <div class="grid-item span-two">
+            <h2>Spans 2 Columns</h2>
+            <p>This item spans across two columns</p>
+        </div>
+        
+        <div class="grid-item item1">
+            <h3>Item 1</h3>
+            <p>Normal size</p>
+        </div>
+        
+        <div class="grid-item item2">
+            <h3>Item 2</h3>
+            <p>Normal size</p>
+        </div>
+        
+        <div class="grid-item item3">
+            <h3>Item 3</h3>
+            <p>Normal size</p>
+        </div>
+        
+        <div class="grid-item item4">
+            <h3>Item 4</h3>
+            <p>Normal size</p>
+        </div>
+    </div>
+    
+    <p>The first item spans across two columns using grid-column: span 2</p>
+</body>
+</html> 

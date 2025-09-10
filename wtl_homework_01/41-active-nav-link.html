@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Nav Link Highlight</title>
+    <style>
+        .navbar {
+            background-color: #2c3e50;
+            padding: 15px 0;
+            list-style-type: none;
+            margin: 0;
+            padding-left: 20px;
+        }
+        
+        .navbar li {
+            display: inline;
+            margin-right: 30px;
+        }
+        
+        .navbar a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        
+        .navbar a.active {
+            background-color: #e74c3c;
+            color: white;
+        }
+        
+        .navbar a:hover {
+            color: #f39c12;
+            background-color: #34495e;
+        }
+        
+        .navbar a.active:hover {
+            background-color: #c0392b;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .content {
+            padding: 20px;
+        }
+        
+        .example-box {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    
+    <div class="content">
+        <h1>Active Navigation Link Highlight</h1>
+        
+        <div class="example-box">
+            <h2>Instructions:</h2>
+            <p>Notice how the "About" link has a red background, indicating it's the current active page.</p>
+            <p>Hover over the links to see the hover effects. The active link has a different hover color.</p>
+        </div>
+        
+        <h2>CSS Classes Used:</h2>
+        <ul>
+            <li><strong>.active:</strong> Styles the currently active page link</li>
+            <li><strong>:hover:</strong> Styles links when you hover over them</li>
+            <li><strong>.active:hover:</strong> Special hover style for the active link</li>
+        </ul>
+        
+        <h2>Visual States:</h2>
+        <ul>
+            <li><strong>Normal links:</strong> Light gray text, transparent background</li>
+            <li><strong>Active link:</strong> White text, red background</li>
+            <li><strong>Hover on normal:</strong> Orange text, dark blue background</li>
+            <li><strong>Hover on active:</strong> White text, darker red background</li>
+        </ul>
+        
+        <p>In a real website, you would typically use JavaScript or server-side code to add the "active" class to the current page's link.</p>
+    </div>
+</body>
+</html> 

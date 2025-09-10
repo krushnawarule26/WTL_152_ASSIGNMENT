@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grow Fill Space</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 10px;
+            margin: 20px;
+            height: 200px;
+        }
+        
+        .item {
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        
+        .item1 {
+            background-color: #e74c3c;
+            flex-grow: 1;
+        }
+        
+        .item2 {
+            background-color: #2ecc71;
+            flex-grow: 2;
+        }
+        
+        .item3 {
+            background-color: #f39c12;
+            flex-grow: 1;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Grow Fill Space</h1>
+    
+    <div class="container">
+        <div class="item item1">
+            <h3>Item 1</h3>
+            <p>flex-grow: 1</p>
+        </div>
+        
+        <div class="item item2">
+            <h3>Item 2</h3>
+            <p>flex-grow: 2</p>
+        </div>
+        
+        <div class="item item3">
+            <h3>Item 3</h3>
+            <p>flex-grow: 1</p>
+        </div>
+    </div>
+    
+    <p>Item 2 takes twice as much space as the others!</p>
+</body>
+</html> 

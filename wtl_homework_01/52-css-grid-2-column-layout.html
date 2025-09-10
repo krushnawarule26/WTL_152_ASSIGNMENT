@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid 2-Column Layout</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px;
+        }
+        
+        .grid-item {
+            background-color: #3498db;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .item1 {
+            background-color: #e74c3c;
+        }
+        
+        .item2 {
+            background-color: #2ecc71;
+        }
+        
+        .item3 {
+            background-color: #f39c12;
+        }
+        
+        .item4 {
+            background-color: #9b59b6;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Grid 2-Column Layout</h1>
+    
+    <div class="grid-container">
+        <div class="grid-item item1">
+            <h2>Column 1</h2>
+            <p>This is the first column</p>
+        </div>
+        
+        <div class="grid-item item2">
+            <h2>Column 2</h2>
+            <p>This is the second column</p>
+        </div>
+        
+        <div class="grid-item item3">
+            <h2>Row 2</h2>
+            <p>This is in the second row</p>
+        </div>
+        
+        <div class="grid-item item4">
+            <h2>Row 2</h2>
+            <p>This is also in the second row</p>
+        </div>
+    </div>
+    
+    <p>This creates a perfect 2-column grid layout!</p>
+</body>
+</html> 
