@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+    <style>
+        .error {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <form id="myForm">
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <br><br>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <br><br>
+        <button type="button" onclick="validateForm()">Validate Form</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name");
+            var email = document.getElementById("email");
+            
+            name.classList.remove("error");
+            email.classList.remove("error");
+            
+            if (name.value === "") {
+                name.classList.add("error");
+            }
+            if (email.value === "") {
+                email.classList.add("error");
+            }
+        }
+    </script>
+</body>
+</html> 

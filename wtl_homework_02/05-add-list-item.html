@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add List Item</title>
+</head>
+<body>
+    <ul id="myList">
+        <li>First item</li>
+        <li>Second item</li>
+    </ul>
+    <button onclick="addItem()">Add New Item</button>
+
+    <script>
+        function addItem() {
+            var list = document.getElementById("myList");
+            var newItem = document.createElement("li");
+            newItem.innerHTML = "New list item";
+            list.appendChild(newItem);
+        }
+    </script>
+</body>
+</html> 

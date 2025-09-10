@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown Menu</title>
+    <style>
+        .submenu {
+            display: none;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div onclick="toggleSubmenu(this)" style="background-color: blue; color: white; padding: 10px; cursor: pointer;">
+            Menu 1
+        </div>
+        <div class="submenu">
+            <div>Submenu Item 1</div>
+            <div>Submenu Item 2</div>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div onclick="toggleSubmenu(this)" style="background-color: blue; color: white; padding: 10px; cursor: pointer;">
+            Menu 2
+        </div>
+        <div class="submenu">
+            <div>Submenu Item 1</div>
+            <div>Submenu Item 2</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSubmenu(header) {
+            var submenu = header.nextElementSibling;
+            if (submenu.style.display === "block") {
+                submenu.style.display = "none";
+            } else {
+                submenu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html> 

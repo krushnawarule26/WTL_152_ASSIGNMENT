@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Input Value</title>
+</head>
+<body>
+    <input type="text" id="myInput" placeholder="Type something here">
+    <div id="output">Your input will appear here</div>
+
+    <script>
+        document.getElementById("myInput").addEventListener("input", function() {
+            document.getElementById("output").innerHTML = this.value;
+        });
+    </script>
+</body>
+</html> 

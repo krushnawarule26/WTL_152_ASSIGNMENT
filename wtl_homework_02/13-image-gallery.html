@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+</head>
+<body>
+    <img id="galleryImage" src="https://via.placeholder.com/300/ff0000" width="300">
+    <br>
+    <button onclick="previousImage()">Previous</button>
+    <button onclick="nextImage()">Next</button>
+
+    <script>
+        var images = [
+            "https://via.placeholder.com/300/ff0000",
+            "https://via.placeholder.com/300/00ff00",
+            "https://via.placeholder.com/300/0000ff"
+        ];
+        var currentIndex = 0;
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            document.getElementById("galleryImage").src = images[currentIndex];
+        }
+
+        function previousImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            document.getElementById("galleryImage").src = images[currentIndex];
+        }
+    </script>
+</body>
+</html> 

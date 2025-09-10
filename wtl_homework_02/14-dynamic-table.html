@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Table</title>
+</head>
+<body>
+    <table id="myTable" border="1">
+        <tr>
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+    </table>
+    <br>
+    <button onclick="addRow()">Add Row</button>
+    <button onclick="removeRow()">Remove Row</button>
+
+    <script>
+        function addRow() {
+            var table = document.getElementById("myTable");
+            var newRow = table.insertRow();
+            var cell1 = newRow.insertCell();
+            var cell2 = newRow.insertCell();
+            cell1.innerHTML = "New Name";
+            cell2.innerHTML = "New Value";
+        }
+
+        function removeRow() {
+            var table = document.getElementById("myTable");
+            if (table.rows.length > 1) {
+                table.deleteRow(table.rows.length - 1);
+            }
+        }
+    </script>
+</body>
+</html> 

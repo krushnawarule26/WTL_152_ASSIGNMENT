@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nested Div Alert</title>
+</head>
+<body>
+  <div id="div1" style="padding: 50PX; background-color: rgb(180, 97, 215);">
+    Outer Text
+    <div id="div2" style="padding: 30PX; background-color: rgb(235, 8, 201);">
+      Inner
+    </div>
+  </div>
+
+  
+  <script>
+   
+    const outerDiv = document.getElementById("div1");
+    const innerDiv = document.getElementById("div2");
+
+   
+    innerDiv.addEventListener("click", function(event) {
+      alert("Inner Div");
+      event.stopPropagation();
+    });
+
+    outerDiv.addEventListener("click", function() {
+      alert("Outer Div");
+    });
+  </script>
+</body>
+</html>

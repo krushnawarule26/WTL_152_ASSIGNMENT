@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Delegation</title>
+</head>
+<body>
+    <ul id="myList">
+        <li>Click me to highlight</li>
+        <li>Click me to highlight</li>
+        <li>Click me to highlight</li>
+        <li>Click me to highlight</li>
+    </ul>
+
+    <script>
+        document.getElementById("myList").addEventListener("click", function(event) {
+            if (event.target.tagName === "LI") {
+                event.target.style.backgroundColor = "yellow";
+            }
+        });
+    </script>
+</body>
+</html> 

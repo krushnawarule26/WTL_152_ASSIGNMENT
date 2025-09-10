@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>See Output In The Console</h1>
+    <script>
+        let obj=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+            console.log("1");
+            resolve("sucessfully!");
+            reject("networking error");
+        },4000); 
+    });
+        obj.then((res)=>{console.log("operation is sucessful:-"+res)});
+        obj.catch((x)=>{console.log("operation is rejected:-"+x)});
+         console.log("2");
+          console.log("3");
+    </script>
+    
+</body>
+</html>

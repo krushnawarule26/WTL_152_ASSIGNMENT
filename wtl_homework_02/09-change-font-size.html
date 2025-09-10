@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Font Size</title>
+</head>
+<body>
+    <p id="myText" style="font-size: 16px;">This text size can be changed</p>
+    <button onclick="increaseSize()">Increase Size</button>
+    <button onclick="decreaseSize()">Decrease Size</button>
+
+    <script>
+        function increaseSize() {
+            var text = document.getElementById("myText");
+            var currentSize = parseInt(text.style.fontSize);
+            text.style.fontSize = (currentSize + 2) + "px";
+        }
+
+        function decreaseSize() {
+            var text = document.getElementById("myText");
+            var currentSize = parseInt(text.style.fontSize);
+            text.style.fontSize = (currentSize - 2) + "px";
+        }
+    </script>
+</body>
+</html> 

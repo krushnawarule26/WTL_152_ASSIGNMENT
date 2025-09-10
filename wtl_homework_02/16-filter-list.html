@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filter List</title>
+</head>
+<body>
+    <input type="text" id="searchInput" placeholder="Search items...">
+    <ul id="myList">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+        <li>Grape</li>
+        <li>Mango</li>
+    </ul>
+
+    <script>
+        document.getElementById("searchInput").addEventListener("input", function() 
+        {
+            var filter = this.value.toLowerCase();
+            var list = document.getElementById("myList");
+            var items = list.getElementsByTagName("li");
+
+            for (var i = 0; i < items.length; i++) 
+            {
+                var text = items[i].textContent || items[i].innerText;
+                if (text.toLowerCase().indexOf(filter) > -1) 
+                {
+                    items[i].style.display = "";
+                } 
+                else 
+                {
+                    items[i].style.display = "none";
+                }
+            }
+        }
+    );
+    </script>
+</body>
+</html> 

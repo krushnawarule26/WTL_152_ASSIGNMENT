@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Slideshow</title>
+</head>
+<body>
+    <img id="slideshowImage" src="https://via.placeholder.com/400/ff0000" width="400">
+    <br>
+    <button onclick="previousSlide()">Previous</button>
+    <button onclick="nextSlide()">Next</button>
+    <button onclick="startSlideshow()">Start Slideshow</button>
+    <button onclick="stopSlideshow()">Stop Slideshow</button>
+
+    <script>
+        var images = [
+            "https://via.placeholder.com/400/ff0000",
+            "https://via.placeholder.com/400/00ff00",
+            "https://via.placeholder.com/400/0000ff",
+            "https://via.placeholder.com/400/ffff00"
+        ];
+        var currentIndex = 0;
+        var slideshowInterval;
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % images.length;
+            document.getElementById("slideshowImage").src = images[currentIndex];
+        }
+
+        function previousSlide() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            document.getElementById("slideshowImage").src = images[currentIndex];
+        }
+
+        function startSlideshow() {
+            slideshowInterval = setInterval(nextSlide, 2000);
+        }
+
+        function stopSlideshow() {
+            clearInterval(slideshowInterval);
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accordion</title>
+    <style>
+        .content {
+            display: none;
+            padding: 10px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="accordion">
+        <div class="header" onclick="toggleContent(this)" style="background-color: blue; color: white; padding: 10px; cursor: pointer;">
+            Section 1
+        </div>
+        <div class="content">
+            This is the content for section 1
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="header" onclick="toggleContent(this)" style="background-color: blue; color: white; padding: 10px; cursor: pointer;">
+            Section 2
+        </div>
+        <div class="content">
+            This is the content for section 2
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(header) {
+            var content = header.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html> 

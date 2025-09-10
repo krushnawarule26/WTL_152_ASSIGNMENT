@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Element</title>
+</head>
+<body>
+    <div id="toDelete" style="background-color: red; color: white; padding: 10px;">
+        This element will be deleted
+    </div>
+    <p>This paragraph will remain</p>
+    <button onclick="deleteElement()">Delete Element</button>
+
+    <script>
+        function deleteElement() {
+            var element = document.getElementById("toDelete");
+            element.remove();
+        }
+    </script>
+</body>
+</html> 

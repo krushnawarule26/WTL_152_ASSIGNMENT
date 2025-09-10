@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Count</title>
+</head>
+<body>
+    <textarea id="myTextarea" rows="4" cols="50" placeholder="Type your text here"></textarea>
+    <div>Character count: <span id="count">0</span></div>
+
+    <script>
+        document.getElementById("myTextarea").addEventListener("input", function() {
+            document.getElementById("count").innerHTML = this.value.length;
+        });
+    </script>
+</body>
+</html> 
