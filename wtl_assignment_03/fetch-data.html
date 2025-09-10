@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cat Facts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #facts {
+            margin-top: 20px;
+        }
+
+        .fact {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px auto;
+            width: 80%;
+            border-radius: 5px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Random Cat Facts</h1>
+    <button onclick="loadFacts()">Load Facts</button>
+
+    <div id="facts"></div>
+
+    <script>
+        async function loadFacts() {
+            const factsContainer = document.getElementById("facts");
+            factsContainer.innerHTML = "";
+
+            for (let i = 0; i < 5; i++) {
+                const response = await fetch("https://catfact.ninja/fact");
+                const data = await response.json();
+
+                const factDiv = document.createElement("div");
+                factDiv.className = "fact";
+                factDiv.textContent = data.fact;
+
+                factsContainer.appendChild(factDiv);
+            }
+        }
+    </script>
+
+</body>
+</html>
